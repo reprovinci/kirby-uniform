@@ -1,7 +1,7 @@
 {
   "name": "mzur/kirby-uniform",
   "description": "A versatile Kirby 2 plugin to handle web form actions.",
-  "type": "library",
+  "type": "kirby-plugin",
   "license": "GPL-2.0",
   "keywords": [
     "kirby",
@@ -20,7 +20,8 @@
   },
   "require": {
     "php": ">=5.5.0",
-    "mzur/kirby-form": "^1.0"
+    "mzur/kirby-form": "^1.0",
+    "composer/installers": "^1.3"
   },
   "require-dev": {
     "getkirby/toolkit": "dev-master",
@@ -40,5 +41,8 @@
     "psr-4": {
       "Uniform\\Tests\\": "tests/"
     }
+  },
+  "extra": {
+    "installer-name": "uniform"
   }
 }
